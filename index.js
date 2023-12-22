@@ -72,3 +72,6 @@ fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=queen")
    </div>`;
     }
   });
+fetch("https://api.deezer.com/album/212377/tracks")
+  .then((raw) => raw.json())
+  .then((data) => console.log(data));
